@@ -38,7 +38,7 @@ export const Banner = ()=>{
         },delta)
 
         return () => {clearInterval(ticker)}
-    },[text,delta,tick])
+    },[text,delta])
 
 return(
 <section className="banner bg-danger" id="home">
