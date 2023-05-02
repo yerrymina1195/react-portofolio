@@ -16,10 +16,10 @@ export const Banner = ()=>{
     useEffect(()=>{
         let ticker = setInterval(()=>{
             tick();
-        },[delta,tick])
+        },delta)
 
         return () => {clearInterval(ticker)}
-    },[text])
+    },[text,delta,tick])
     const tick = () =>{
         let i = loopNum % toRotate.length;
         let fullText = toRotate[i];
