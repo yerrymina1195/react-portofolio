@@ -5,6 +5,7 @@ import logo2 from '../assets/img/LOGO MAKHAN ROND 3.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+import { FaBuromobelexperte} from "react-icons/fa";
 
 
 export const  NavBar = () => {
@@ -35,7 +36,7 @@ export const  NavBar = () => {
             <img src={scrolled ? logo : logo2} alt="Logo" />
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" >
-                <span className="navbar-toogler-icon"></span>
+                <span className="navbar-toogler-icon"><FaBuromobelexperte size={25}/> </span>
            </Navbar.Toggle>
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

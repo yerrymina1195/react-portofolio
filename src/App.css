@@ -184,6 +184,9 @@ span.navbar-text {
 	height: 100%;
 	position: absolute;
 }
+.navbar-toggler{
+  background-color: #376ce8 !important;
+}
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
 	outline: none;
@@ -192,7 +195,9 @@ nav.navbar .navbar-toggler:focus {
 nav.navbar .navbar-toggler-icon {
   width: 24px;
   height: 17px;
-  background-image: none;
+  background-color: blue;
+  color: red;
+  /* background-image: none; */
   position: relative;
   border-bottom: 2px solid #fff;
   transition: all 300ms linear;
@@ -250,7 +255,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 45px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -625,4 +630,24 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+@media only screen and (max-width: 393px){
+  .newsletter-bx {
+  
+   
+    padding: 35px 55px;
+    margin-bottom: 80px;
+    margin-top: -122px;
+  }
+  .newsletter-bx h3 {
+  
+  font-size: 15px;
+}
+  .new-email-bx button {
+    background: linear-gradient(90.21deg, #376ce8 -5.91%, #24d9e6 111.58%);
+    padding: 5px 20px;
+    color: #fff;
+    font-weight: 500;
+   
+  }
 }

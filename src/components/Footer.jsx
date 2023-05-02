@@ -17,7 +17,7 @@ export const Footer = () => {
               <h3>Subscribe to our Newsletter<br></br> & Never miss latest updates</h3>
             
             </Col>
-            <Col md={6} xl={7}>
+            <Col sm={12} md={6}  xl={7}>
               <form>
                 <div className="new-email-bx">
                   <input  type="email" placeholder="Email Address" />
