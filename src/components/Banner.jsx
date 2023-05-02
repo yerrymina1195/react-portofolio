@@ -16,14 +16,6 @@ export const Banner = ()=>{
         let i = loopNum % toRotate.length;
         let fullText = toRotate[i];
         let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-    useEffect(()=>{
-        let ticker = setInterval(()=>{
-            tick();
-        },delta)
-
-        return () => {clearInterval(ticker)}
-    },[text,delta,tick])
-   
 
         setText(updatedText);
         if (isDeleting) {
@@ -40,6 +32,14 @@ export const Banner = ()=>{
           }
 
     }
+    useEffect(()=>{
+        let ticker = setInterval(()=>{
+            tick();
+        },delta)
+
+        return () => {clearInterval(ticker)}
+    },[text,delta,tick])
+
 return(
 <section className="banner bg-danger" id="home">
     <div className="container">
