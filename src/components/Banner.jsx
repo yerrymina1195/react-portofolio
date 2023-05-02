@@ -12,7 +12,10 @@ export const Banner = ()=>{
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [text, setText] = useState('');
     const period = 2000;
-
+    const tick = () =>{
+        let i = loopNum % toRotate.length;
+        let fullText = toRotate[i];
+        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
     useEffect(()=>{
         let ticker = setInterval(()=>{
             tick();
@@ -20,10 +23,7 @@ export const Banner = ()=>{
 
         return () => {clearInterval(ticker)}
     },[text,delta,tick])
-    const tick = () =>{
-        let i = loopNum % toRotate.length;
-        let fullText = toRotate[i];
-        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
+   
 
         setText(updatedText);
         if (isDeleting) {
