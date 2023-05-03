@@ -28,10 +28,10 @@ export const Footer = () => {
           </Row>
         </div>
       </Col>
-          <Col size={12} sm={6}>
+      <Col size={12} sm={6} className="text-center ">
             <img src={logo} alt="Logo" />
           </Col>
-          <Col size={12} sm={6} className="text-center text-sm-end">
+          <Col size={12} sm={6} className="text-center ">
             <div className="social-icon">
               <a href="/"><img src={navIcon1} alt="Icon" /></a>
               <a href="/"><img src={navIcon2} alt="Icon" /></a>
@@ -39,6 +39,7 @@ export const Footer = () => {
             </div>
             <p>Copyright 2023. All Rights Reserved</p>
           </Col>
+         
         </Row>
       </Container>
     </footer>
