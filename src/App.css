@@ -632,13 +632,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 @media only screen and (max-width: 393px){
-  .newsletter-bx {
-  
-   
-    padding: 35px 55px;
-    margin-bottom: 80px;
-    margin-top: -122px;
-  }
+
   .newsletter-bx h3 {
   
   font-size: 15px;
@@ -678,4 +672,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer img {
   width: 100%;
 }
+}
+@media only screen and (max-width: 793px){
+  .newsletter-bx {
+  
+   
+    padding: 35px 55px;
+    margin-bottom: 80px;
+    margin-top: -122px;
+  }
 }

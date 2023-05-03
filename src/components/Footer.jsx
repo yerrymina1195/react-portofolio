@@ -12,12 +12,12 @@ export const Footer = () => {
         <Row className="align-items-center">
         <Col lg={12}>
         <div className="newsletter-bx wow slideInUp">
-          <Row>
-            <Col lg={12} md={6} xl={5}>
+          <Row className="flex-column">
+            <Col  md={12} >
               <h3>Subscribe to our Newsletter<br></br> & Never miss latest updates</h3>
             
             </Col>
-            <Col sm={12} md={6}  xl={7}>
+            <Col   >
               <form>
                 <div className="new-email-bx">
                   <input  type="email" placeholder="Email Address" />
